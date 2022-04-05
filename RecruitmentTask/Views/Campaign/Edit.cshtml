@@ -27,12 +27,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="BidAmount" class="control-label"></label>
-                <input asp-for="BidAmount" class="form-control" value="@Model.BidAmount.ToString().Replace(',','.')"/>
+                <input asp-for="BidAmount" class="form-control" value="@Model.BidAmount.ToString().Replace(',','.')" />
                 <span asp-validation-for="BidAmount" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CampaignFund" class="control-label"></label>
-                <input asp-for="CampaignFund" class="form-control" disabled="disabled" value="@Model.CampaignFund.ToString().Replace(',','.')"/>
+                <input asp-for="CampaignFund" class="form-control" readonly value="@Model.CampaignFund.ToString().Replace(',','.')"/>
                 <span asp-validation-for="CampaignFund" class="text-danger"></span>
             </div>
             <div class="form-group">
